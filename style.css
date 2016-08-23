@@ -1,0 +1,408 @@
+/*
+	STYLE.CSS:
+	One stylesheet to rule them all.
+
+	selector { property:value }
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans|Quattrocento);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+
+/* ----- =structure ----- */
+
+body {
+	background-color: #fff;
+}
+header {
+	height: 120px;
+	background-color: #fff;
+}
+#content {
+	padding-top: 60px;
+	min-height: 400px;
+}
+footer {
+	background-color: #bdcbd9;
+}
+.wrapper {
+	width: 80%;
+	margin: auto;
+	max-width: 1140px;
+}
+.wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* ----- =logo ----- */
+
+header h1 {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 40px;
+	float: left;
+	padding-top: 50px;
+	margin: 0 0 0 20px;
+}
+header h1 a  {
+	text-decoration: none;
+	color: #8f99a4;
+}
+header h1 a:hover {
+	color: #777;
+}
+
+/* ----- =header & nav ----- */
+
+nav {
+  float: right;
+  margin: 72px 20px 0 0;
+
+}
+
+nav a {
+
+	display: block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  color: #444;
+  border-top: 1px #000 solid;
+  padding: 12px 0;
+  font-family: Quattrocento, sans-serif;
+
+}
+
+nav a:hover {
+  color: #777;
+}
+
+nav a:last-of-type {
+  margin-right: 20px;
+}
+
+/* ----- =footer ----- */
+
+footer {
+	text-align: center;
+}
+footer #copyright {
+	color: #fff;
+	margin-top: 26px;
+}
+footer #social-media {
+	width: 100%;
+	background-color: #8b959f;
+}
+
+
+footer #social-media ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+footer #social-media ul li {
+	float: left;
+	margin: 15px 5px 8px 5px;
+}
+
+
+/* ----- =full background images ----- */
+
+.bg-full-image {
+	position: relative;
+	min-width: 980px;
+}
+.bg-full-image img {
+	display: block;
+	width: 94%;
+	border: 1px #b4b4b4 solid;
+	margin:3%;
+}
+.bg-color-band {
+    height: 20px;
+	background-color: #c8d6e3;
+	border: 1px solid #b7c4d0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+/* ----- =type ----- */
+
+h2 {
+	font-family: Quattrocento, sans-serif;
+	font-size: 36px;
+	color: #8f99a4;
+}
+h3 {
+	font-family: Quattrocento, sans-serif;
+	font-size: 24px;
+	color: #363636;
+}
+p {
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	color: #777;
+}
+.center {
+	text-align: center;
+}
+a:link {
+	color: #8f99a4;
+	text-decoration: none;
+}
+em {
+	font-size: 14px;
+	line-height: 18px;
+	padding-top: 10px;
+	display: block;
+	color: #999;
+}
+.quote {
+	text-indent: -0.5em;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+/* ----- =button ----- */
+.button {
+	color: #8b959f;
+	border: 1px #8f99a4 solid;
+	background-color: #f6f9fb;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+.button:hover {
+	color: #fff;
+	background-color: #8b959f;
+	padding: 5px 10px;
+}
+
+/* ----- =columns ----- */
+
+.one_half { width: 45.5%; }
+.one_third { width: 29.333%; }
+.two_third { width: 61.666%; }
+.one_fourth { width: 21.25%; }
+.three_fourth { width: 69.75%; }
+.full_column { width: 94%; }
+
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.full_column {
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+
+/* clearfix */
+.row:before,
+.row:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+/* ----- =style ----- */
+hr {
+	height: 2px;
+	background-color: #d4d4d4;
+	border: none;
+	margin: 60px 0 100px 0;
+}
+
+#content img {
+	border: 1px #b4b4b4 solid;
+}
+
+.center-block {
+	margin: auto;
+	border: 0;
+}
+
+ul li p {
+	margin: .25em;
+
+}
+
+label {
+   padding-bottom: 5em !important;
+}
+
+
+.iframe-corners {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/*media resizing properly*/
+
+
+img, embed, object, video {
+  max-width: 100%;
+  height : auto;
+}
+
+/*Media Queries*/
+
+@media (max-width : 1024px) {
+
+/* Treat as 1/2 column */
+.one_fourth {
+    width: 45.5%;
+}
+
+.wrapper {
+    width: 90%;
+}
+
+}
+
+@media (max-width : 768px) {
+
+/* Treat as full column */
+.one_half,
+.one_third,
+.two_third,
+.one_fourth,
+.three_fourth,
+.full_column {
+    width: 100%;
+    margin-left: 0%;
+}
+
+hr {
+	height: 2px;
+	background-color: #d4d4d4;
+	border: none;
+	margin: 30px 0 50px 0;
+}
+
+}
+
+/*For the hero image*/
+
+
+@media (max-width: 980px) {
+
+.bg-full-image {
+    min-width: 320px;
+}
+
+}
+
+/*For the navigation*/
+
+/* ----- =responsive ----- */
+
+@media screen and (max-width: 980px) {
+
+header {
+  height: auto;
+}
+
+header h1 {
+  float: none;
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+nav {
+  margin: 10px 0 20px 0;
+  float: none;
+  text-align: center;
+}
+
+nav a:last-of-type {
+  margin-right: 0px;
+}
+
+nav a {
+	display:block;
+	width:100%;
+	font-size:18px;
+	border-top:1px #000 solid;
+	padding:12px 0;
+	font-family: Quattrocento, sans-serif;
+}
+
+}
+
+/*This is for the hamburger menu*/
+
+
+
+#top-nav {
+  display: none;
+}
+.toggle-menu {
+  float: right;
+}
+.toggle-menu img {
+  border: 1px #777 solid;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 20px 20px 20px 20px;
+}
+
+/* ----- =responsive ----- */
+
+@media screen and (min-width: 980px) {
+.wrapper {
+  width: 980px;
+}
+
+header {
+  height: 120px;
+}
+
+header h1 {
+  float: left;
+  margin: 20px 0 20px 20px;
+  text-align: left;
+}
+
+nav {
+  float: right;
+  margin: 80px 20px 0 0;
+  text-align: left;
+}
+
+nav a {
+  display: inline;
+  border-top: none;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  background: none;
+}
+
+nav a:last-of-type {
+  border-bottom: none;
+}
+
+.hero {
+  height: 400px;
+}
+
+#top-nav {
+  display: block !important;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+}
